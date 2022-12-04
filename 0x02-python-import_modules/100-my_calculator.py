@@ -2,10 +2,10 @@
 from calculator_1 import add, sub, mul, div
 import sys
 if __name__ == "__main__":
-    """Usage: ./100-my_calculator.py <a> <operator> <b>
-        exit = 1
-    """
-    if len(sys.argv) - 1 != 3:
+    if len(sys.argv) == 1:
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        exit(1)
+    if len(sys.argv) - 1 != 3 and len(sys.argv) != 1:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     a = int(sys.argv[1])
