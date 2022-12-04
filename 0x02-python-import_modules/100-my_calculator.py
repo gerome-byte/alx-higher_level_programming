@@ -2,7 +2,7 @@
 from calculator_1 import add, sub, mul, div
 import sys
 if __name__ == "__main__":
-    """./100-my_calculator.py a operator b"""
+    """Usage: ./100-my_calculator.py <a> <operator> <b>"""
     a = int(sys.argv[1])
     b = int(sys.argv[3])
     c = add(a, b)
@@ -14,12 +14,16 @@ if __name__ == "__main__":
         exit(1)
     if sys.argv[2] == "+":
         print("{:d} + {:d} = {:d}".format(a, b, c))
+        exit(0)
     elif sys.argv[2] == "-":
         pirint("{:d} - {:d} = {:d}".format(a, b, d))
+        exit(0)
     elif sys.argv[2] == "*":
         print("{:d} * {:d} = {:d}".format(a, b, e))
+        exit(0)
     elif sys.argv[2] == "/":
         print("{:d} / {:d} = {:d}".format(a, b, f))
+        exit(0)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
