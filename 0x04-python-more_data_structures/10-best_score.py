@@ -8,4 +8,4 @@ def best_score(a_dictionary):
             if v == z:
                 return k
     else:
-        return None               
+        return None
